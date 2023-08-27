@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Nav from "@/components/Nav";
 import Header from "@/components/Header";
+import Transition from "@/components/Transition";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,13 +20,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={inter.className}>
-        <main className="relative page bg-site text-white bg-cover bg-no-repeat">
-          <TopLeftImg />
-          <Nav />
-          <Header />
-          {children}
-        </main>
+      <body
+        className={`bg-site bg-cover bg-no-repeat relative text-white ${inter.className}`}
+      >
+        <Transition>
+          <main className="relative page text-white">
+            <TopLeftImg />
+            <Nav />
+            <Header />
+            {children}
+          </main>
+        </Transition>
       </body>
     </html>
   );

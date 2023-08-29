@@ -29,7 +29,7 @@ const Transition = ({ children }: { children: any }) => {
             animate="animate"
             exit="exit"
             transition={{ delay: 0.2, duration: 0.6, ease: "easeInOut" }}
-            className="fixed top-0 bottom-0 right-full h-screen w-screen z-30 bg-primary"
+            className="fixed top-0 bottom-0 right-full h-screen w-screen z-50 bg-primary"
           />
           <motion.div
             variants={transitionVariants}
@@ -37,7 +37,7 @@ const Transition = ({ children }: { children: any }) => {
             animate="animate"
             exit="exit"
             transition={{ delay: 0.4, duration: 0.6, ease: "easeInOut" }}
-            className="fixed top-0 bottom-0 right-full h-screen w-screen z-20 bg-secondary"
+            className="fixed top-0 bottom-0 right-full h-screen w-screen z-30 bg-secondary"
           />
           <motion.div
             variants={transitionVariants}
@@ -45,7 +45,7 @@ const Transition = ({ children }: { children: any }) => {
             animate="animate"
             exit="exit"
             transition={{ delay: 0.6, duration: 0.6, ease: "easeInOut" }}
-            className="fixed top-0 bottom-0 right-full h-screen w-screen z-10 bg-accent"
+            className="fixed top-0 bottom-0 right-full h-screen w-screen z-20 bg-accent"
           />
         </>
       </motion.div>

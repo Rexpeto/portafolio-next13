@@ -10,3 +10,12 @@ export const navData = [
   },
   { name: "contact", path: "/contact", icon: "HiEnvelope" },
 ];
+
+export const socialData = [
+  { name: "github", icon: "FaGithub", path: "https://github.com/rexpeto" },
+  {
+    name: "linkedin",
+    icon: "FaLinkedin",
+    path: "https://www.linkedin.com/in/rexpeto/",
+  },
+];

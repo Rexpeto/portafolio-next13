@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import ProjectBtn from "@/components/ProjectBtn";
 import Image from "next/image";
+import Avatar from "@/components/Avatar";
 
 export default function Home() {
   const fadeIn = (duration: number, transition: string) => {
@@ -56,21 +57,7 @@ export default function Home() {
           </motion.div>
         </div>
       </div>
-      <motion.div
-        variants={fadeIn(3.8, "up")}
-        initial="hidden"
-        animate="show"
-        exit="hidden"
-        className="xl:w-[800px] w-full xl:h-full absolute right-0 bottom-0 z-20 hidden xl:block"
-      >
-        <Image
-          src="/avatar.png"
-          alt="Carlos Gallardo"
-          width={737}
-          height={678}
-          className="object-cover"
-        />
-      </motion.div>
+      <Avatar duration={3.8} transition="up" />
     </div>
   );
 }
